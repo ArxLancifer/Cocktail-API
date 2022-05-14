@@ -1,0 +1,115 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+*, *:before, *:after {
+box-sizing:inherit;
+}
+*/
+
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+main {
+    background: url("https://lilleaddict.fr/wordpress/wp-content/uploads/2019/10/cocktail-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 900px;
+    height: 900px;
+    margin: 2% auto;
+    color: #fff;
+}
+
+
+main > section {
+    padding: 5%;
+    background-color: rgba(55,55,55,0.5);
+    height: 90%;
+}
+input {
+    padding: 4px 0;
+    border: none;
+}
+::placeholder {
+    font-size: 1rem;
+}
+label {
+    background-color: rgb(218, 218, 218);
+    color: black;
+    padding: 3px 4px;
+    position: relative;
+    right: 4px;
+    top: 1px;
+    box-shadow: 3px 3px 8px gray;
+    font-weight: 600;
+    
+}
+
+.carousel {
+    position: relative;
+    margin: 5% 0;
+    /* border: 2px solid; */
+    width: 430px;
+    overflow: hidden;
+}
+
+
+ul.drinkPics {
+    list-style-type: none;
+    display: flex; 
+    transition: transform 300ms ease-in-out;
+    
+   
+}
+div.btn {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    width: 50px;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    color:#fff;
+}
+.previous{
+    right: 1rem; 
+}
+.next{
+    left: 1rem;
+}
+div.btn:hover {
+    background-color: rgba(31, 30, 30, 0.8);
+}
+img {
+    width: 430px;
+    display: block;
+    
+}
+
+.instructions {
+    border: 1px solid;
+    padding: 20px 0;
+    margin: 2% 0;
+}
+.ingedients {
+    min-height: 50px;
+}
+
